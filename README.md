@@ -16,7 +16,7 @@ Los modelados en UML los podrá consultar directamente en el Anexo 3 del documen
 En la carpeta *Código*  acceda a la subcarpeta de interés y descargue el código deseado.
 
 Para poder visualizar y compilar el código podrá utilizar un IDE compatible con lenguaje C++.Por ejemplo: CodeBlocks,DEVC++ o CLion.
-Recomendamos emplear CodeBlocks ya que fue el entorno de trabajo utilizado originalmente.
+*Recomendamos emplear CodeBlocks ya que fue el entorno de trabajo utilizado originalmente.*
 
 Una vez descargado el programa, dar clic derecho sobre éste, seleccionar "Abrir con" y elegir el IDE deseado.
 
