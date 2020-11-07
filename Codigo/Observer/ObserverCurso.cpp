@@ -78,7 +78,7 @@ public:
 	}
 	
 	void print() {
-		cout << "Alumno \"" << this->numero << "\": Nueva Notificación --> " << this->mens_suj_ << "\n";
+		cout << "Alumno \"" << this->numero << "\": Nueva NotificaciÃ³n --> " << this->mens_suj_ << "\n";
 	}
 	
 	
