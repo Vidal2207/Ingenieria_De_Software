@@ -14,6 +14,7 @@ Los modelados en UML los podrá consultar directamente en el Anexo 3 del documen
 - Archivo con extensión .cpp
 ### Pasos a Seguir
 En la carpeta *Código*  acceda a la subcarpeta de interés y descargue el código deseado.
+
 Para poder visualizar y compilar el código podrá utilizar un IDE compatible con lenguaje C++.Por ejemplo: CodeBlocks,DEVC++ o CLion.
 Recomendamos emplear CodeBlocks ya que fue el entorno de trabajo utilizado originalmente.
 
