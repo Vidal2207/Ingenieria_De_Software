@@ -55,7 +55,7 @@ public:
 	
 };
 
-class  Grupo : public IServer {
+class  Curso : public IServer {
 private:
 	string mens_suj_;
 	Alumno &alumno_;
@@ -63,14 +63,14 @@ private:
 	int numero;
 	
 public:
-	Grupo(Alumno &alumno) : alumno_(alumno) {
+	Curso(Alumno &alumno) : alumno_(alumno) {
 		this->alumno_.Agregar(this);
-		cout << "Alumno " << ++Grupo::ns << " registrado con exito.\n\n";
-		this->numero = Grupo::ns;
+		cout << "Alumno " << ++Curso::ns << " registrado con exito.\n\n";
+		this->numero = Curso::ns;
 	}
 	void Quitar() {
 		alumno_.Eliminar(this);
-		std::cout << "Alumno \"" << numero << "\" eliminado del grupo.\n";
+		std::cout << "Alumno \"" << numero << "\" eliminado del curso.\n";
 	}
 	void Actualizar(const string &mens_suj) override {
 		mens_suj_ = mens_suj;
@@ -83,21 +83,21 @@ public:
 	
 	
 };
-int Grupo::ns = 0;
+int Curso::ns = 0;
 
 void Interfaz() {
 	int opc = 0, opc2 = 0,num,opc3=0;
 	Alumno *alumno = new Alumno;
 	string anunc = "Nuevo anuncio : ", res;
 	char noti [50];
-	Grupo *Observador1 = new Grupo(*alumno);
-	Grupo *Observador2 = new Grupo(*alumno);
-	Grupo *Observador3 = new Grupo(*alumno);
-	Grupo *Observador4 = new Grupo(*alumno);
-	Grupo *Observador5 = new Grupo(*alumno);
+	Curso *Observador1 = new Curso(*alumno);
+	Curso *Observador2 = new Curso(*alumno);
+	Curso *Observador3 = new Curso(*alumno);
+	Curso *Observador4 = new Curso(*alumno);
+	Curso *Observador5 = new Curso(*alumno);
 	
 	do{
-		cout << "1. Notificar Grupo" << endl;
+		cout << "1. Notificar Curso" << endl;
 		cout << "2. Eliminar Alumno" << endl;
 		cout << "3. Salir " << endl;
 		cin >> opc;
@@ -160,11 +160,7 @@ void Interfaz() {
 
 				}
 	
-	delete Observador1;
-	delete Observador2;
-	delete Observador3;
-	delete Observador4;
-	delete Observador5;
+
 	delete alumno;
 }
 	} while(opc !=3);
