@@ -20,7 +20,7 @@ public:
 };
 
 /*El Decorador base utiliza la misma interfaz que las tareas concretas
-Su propósito es definir los envoltorios(wrapps) para los decoradores concretos
+Su propÃ³sito es definir los envoltorios(wrapps) para los decoradores concretos
 */
 class decoradorTarea:public tarea{
 protected:
