@@ -2,7 +2,7 @@
 
 using namespace std;
 
-///Interfaz OpcionesComando cuya funciÛn es avisar
+///Interfaz OpcionesComando cuya funci√≥n es avisar
 /// que algo se va a ejecutar
 class OpcionesComando{
     public:
@@ -22,7 +22,7 @@ class InvocadorOpcion{
 };
 
 
-///Clase que ejecutar· el comando establecido.
+///Clase que ejecutar√° el comando establecido.
 class Receptor{
     public:
         Receptor(){}
@@ -122,7 +122,7 @@ int main(){
   //Crear el receptor
   Receptor *receptor = new Receptor();
 
-  // Crear los comandos deseados, indic·ndoles el Receptor
+  // Crear los comandos deseados, indic√°ndoles el Receptor
   OpcionesComando *opcAbrir = new OpcionAbrir(receptor);
   OpcionesComando *opcImprimir = new OpcionImprimir(receptor);
   OpcionesComando *opcEliminar = new OpcionEliminar(receptor);
@@ -131,7 +131,7 @@ int main(){
 
     cout << "******** CONSULTA DE CONTENIDOS ********\n";
     cout << "\nEl usuario elige diferentes comandos a ejecutar.\n" << "Resultado: \n";
-  //Establecer los comandos y ejecutarlos a travÈs del invocador
+  //Establecer los comandos y ejecutarlos a trav√©s del invocador
   invocador->setComando(opcAbrir);
   invocador->ejecutarComando();
   invocador->setComando(opcImprimir);
